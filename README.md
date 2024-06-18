@@ -1,10 +1,10 @@
 # Mi Portafolio Personal
 
-Este es el repositorio de mi portafolio personal, donde muestro mi información profesional, habilidades, experiencia y proyectos desarrollados. El proyecto está construido con HTML y CSS, y está diseñado para ser una presentación visualmente atractiva de mi perfil.
+Este es el repositorio de mi portafolio personal
 
 ## Vista Previa
 
-![Vista Previa del Portafolio](.img/Captura%20desde%202024-06-17%2023-04-51.png)
+![Vista Previa del Portafolio](.img/portafolio.png)
 
 ## Contenido
 
