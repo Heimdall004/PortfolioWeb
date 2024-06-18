@@ -3,9 +3,6 @@
     --color-foreground: #c9d1d9; /* Texto principal */
     --color-muted: #8b949e; /* Texto secundario/mutado */
     --color-accent: #58a6ff; /* Enlaces y elementos de interacción */
-    --color-success: #238636; /* Estado de éxito (por ejemplo, merges exitosos) */
-    --color-warning: #d29922; /* Estado de advertencia (por ejemplo, conflictos) */
-    --color-error: #f85149; /* Estado de error (por ejemplo, errores en la fusión) */
     --color-border: #30363d; /* Bordes y divisores */
     --color-overlay: #161b22; /* Fondos de superposición (por ejemplo, modal) */
 }
@@ -14,6 +11,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow:auto;
+    scrollbar-width: none; 
 }
 
 /* Diseño General*/
@@ -24,6 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 100vh;
     width: auto;
 }
@@ -32,6 +32,11 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-muted);
+}
 /* Diseño de contenedores */
 
 .contenedorPrincipal{
@@ -39,8 +44,6 @@ h2{
     border-radius: 25px;
     width: 90%;
     height: 90%;
-
-    overflow: auto;
 
     display: flex;
     justify-content: space-between;
@@ -58,7 +61,7 @@ h2{
     justify-content: center;
 
     /* Ocultar la barra de scroll */
-    scrollbar-width: none; /* Firefox */
+    /* Firefox */
 
 }
 
@@ -95,6 +98,7 @@ svg :hover{
 
 
 /* Secciones barra*/
+
 .barraNav {
     width: 100%;
     padding: 10px 0; /* Ajustar el padding para espaciar los elementos */
@@ -133,8 +137,9 @@ svg :hover{
 
 /*Secciones*/
 
-
-.cardmein{
+.cards{
+    height: 100%;
+    margin: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,7 +147,19 @@ svg :hover{
     text-align: center;
 }
 
-.cards{
-    height: 100%;
-    margin: 2%;
+/*Habilidades*/
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
 }
+
+.skills-list li {
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px solid var(--color-border);
+    border-radius: 20px;
+    background-color: var(--color-background);
+}
+
