@@ -1,0 +1,148 @@
+:root {
+    --color-background: #0d1117; /* Fondo principal */
+    --color-foreground: #c9d1d9; /* Texto principal */
+    --color-muted: #8b949e; /* Texto secundario/mutado */
+    --color-accent: #58a6ff; /* Enlaces y elementos de interacción */
+    --color-success: #238636; /* Estado de éxito (por ejemplo, merges exitosos) */
+    --color-warning: #d29922; /* Estado de advertencia (por ejemplo, conflictos) */
+    --color-error: #f85149; /* Estado de error (por ejemplo, errores en la fusión) */
+    --color-border: #30363d; /* Bordes y divisores */
+    --color-overlay: #161b22; /* Fondos de superposición (por ejemplo, modal) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Diseño General*/
+body {
+    background-color: #000;
+    color: var(--color-foreground);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+h2{
+    color: var(--color-muted);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* Diseño de contenedores */
+
+.contenedorPrincipal{
+    background-color: var(--color-background);
+    border-radius: 25px;
+    width: 90%;
+    height: 90%;
+
+    overflow: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedoInformacion{
+    background-color: var(--color-overlay);
+    height: 100%;
+    width: 75%;
+    border-radius: 25px;
+
+    overflow: auto;
+
+    align-items: center;
+    justify-content: center;
+
+    /* Ocultar la barra de scroll */
+    scrollbar-width: none; /* Firefox */
+
+}
+
+.contenidoUser{
+    height: 100%;
+    width: 25%;
+    
+}
+/* Usuario y barra*/
+
+.logoNmae{
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto dentro de los elementos */
+}
+
+.logoNmae img {
+    width: 70%;
+    height: 70%;
+    border-radius: 100% ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px solid var(--color-border);
+}
+
+svg{
+    color: var(--color-accent);
+}
+
+svg :hover{
+    color: var(--color-overlay);
+}
+
+
+/* Secciones barra*/
+.barraNav {
+    width: 100%;
+    padding: 10px 0; /* Ajustar el padding para espaciar los elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    text-align: center; /* Centra el texto dentro de los elementos */
+}
+
+.barraNav ol {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.barraNav li {
+    margin: 10px; /* Espacio entre elementos */
+}
+
+.barraNav a {
+    color: var(--color-accent);
+    text-decoration: none;
+    padding: 10px 20px; /* Ajustar el espacio interior */
+    border: 2px solid var(--color-border);
+    border-radius: 20px;
+    display: block; /* Hacer que el enlace se comporte como bloque */
+}
+
+.barraNav a:hover {
+    background-color: var(--color-overlay); /* Cambio de color al pasar el ratón */
+}
+
+
+
+/*Secciones*/
+
+
+.cardmein{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cards{
+    height: 100%;
+    margin: 2%;
+}
